@@ -43,6 +43,13 @@ namespace TimesheetsAPI.Models
             modelBuilder.Entity<Staff>().HasData(new Staff(7, "wintersgill", "thomas", "123@me.com"),
                                                  new Staff(8, "smith", "jimmy", "email@gmail.com")
                 );
+
+            modelBuilder.Entity<Location>().HasData(new Location(1, "Tesco", "Redcar")
+                );
+
+            modelBuilder.Entity<Client>().HasData(new Client(1, "Tesco", "RedcarHighStreet", "John", "07532564789", "John@gmail.com"));
+
+
         }
     }
 }
